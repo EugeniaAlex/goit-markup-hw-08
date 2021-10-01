@@ -1,0 +1,7 @@
+@mixin font-prop($fw, $fsz, $lh, $lsp, $color) {
+  font-weight: $fw;
+  font-size: $fsz;
+  line-height: $lh;
+  letter-spacing: $lsp;
+  color: $color;
+}

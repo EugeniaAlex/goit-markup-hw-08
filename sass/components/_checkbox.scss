@@ -1,0 +1,20 @@
+.checkbox {
+  display: block;
+
+  &__input:focus + &__wraper &__icon {
+    background-color: var(--accent-color);
+    border: none;
+  }
+
+  &__wraper {
+    @extend.flex-cont;
+  }
+
+  &__icon {
+    margin-right: 8px;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+  }
+}

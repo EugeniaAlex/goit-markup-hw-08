@@ -1,0 +1,11 @@
+.close-button {
+  display: block;
+  padding: 6px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  &__icon {
+    display: block;
+  }
+}

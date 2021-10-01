@@ -1,0 +1,17 @@
+.address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  &__item:not(:first-child) {
+    margin-top: 9px;
+  }
+  &__link--white-text {
+    color: var(--darkbg-text-color);
+  }
+  &__link--grey-text {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}

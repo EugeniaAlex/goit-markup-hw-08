@@ -1,0 +1,91 @@
+.footer--flex {
+  display: flex;
+}
+
+.footer__contacts {
+  margin-right: 70px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__logo {
+  color: var(--logo-studio-footer-color);
+}
+
+.footer__address {
+  margin-top: 20px;
+}
+
+.footer__social {
+  padding-top: 72px;
+}
+.footer__subscribe {
+  @extend.footer__social;
+}
+
+.footer__title {
+  @include font-prop(700, 14px, 1.14, 0.03em, var(--darkbg-text-color));
+  text-transform: uppercase;
+}
+
+.footer__list {
+  display: flex;
+  margin-top: 20px;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer__link {
+  display: block;
+  padding: 12px;
+  fill: var(--darkbg-text-color);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.footer__icon {
+  display: block;
+}
+
+.footer__subscribe {
+  margin-left: auto;
+}
+
+.footer__form-field {
+  @extend.flex-cont;
+  margin-top: 20px;
+}
+
+.footer__input {
+  margin-right: 12px;
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  outline: none;
+
+  &::placeholder {
+    @include font-prop(400, 16px, 1.25, 0.03em, rgba(255, 255, 255, 0.6));
+  }
+}
+
+.footer__button-main {
+  margin-top: 0px;
+  padding: 10px 32px;
+
+  @extend.flex-cont;
+}
+
+.button-main__icon--right {
+  margin-left: 10px;
+}

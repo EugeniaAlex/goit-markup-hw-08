@@ -1,0 +1,119 @@
+.modal {
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  min-height: 581px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+
+  &__close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    &:hover use,
+    &:focus use {
+      fill: var(--accent-color);
+    }
+  }
+
+  &__form-title {
+    display: block;
+    margin-bottom: 12px;
+    text-align: center;
+
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: var(--main-title-color);
+  }
+
+  &__input-label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__label {
+    @include font-prop(400, 12px, 1.16, 0.01em, var(--main-text-color));
+  }
+
+  &__input-field {
+    position: relative;
+    margin-top: 4px;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    padding: 12px 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    &:focus {
+      border-color: var(--accent-color);
+      outline: none;
+    }
+  }
+
+  &__input-icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(-50%, -50%);
+
+    .modal__input:focus + & {
+      fill: var(--accent-color);
+    }
+  }
+
+  &__textarea-label {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__textarea {
+    display: block;
+    resize: none;
+    margin-top: 4px;
+    padding: 12px 16px;
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    &:focus {
+      @extend.modal__input;
+    }
+
+    &::placeholder {
+      font-family: Roboto;
+      @include font-prop(400, 12px, 1.16, 0.01em, rgba(117, 117, 117, 0.5));
+    }
+  }
+
+  &__checkbox {
+    margin-bottom: 30px;
+  }
+
+  &__checkbox-font {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+
+  &__checkbox-text {
+    color: #757575;
+  }
+
+  &__policy-link {
+    color: var(--accent-color);
+  }
+
+  &__button-main {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 55px;
+  }
+}

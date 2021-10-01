@@ -1,0 +1,31 @@
+.header--border-bottom {
+  border-bottom: 1px solid #ececec;
+}
+
+.header__logo {
+  color: var(--logo-studio-header-color);
+}
+
+.header__contacts-link {
+  @extend.nav__link;
+  color: var(--main-text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header__contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.header__contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header__contacts-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
