@@ -1,9 +1,17 @@
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero/hero-img-opt.jpg);
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .section-dark-bg {
@@ -11,8 +19,15 @@
 }
 
 .hero__title {
-  @include font-prop(900, 44px, 1.36, 0.06em, var(--darkbg-text-color));
   text-transform: uppercase;
+
+  @media screen and (max-width: 1199px) {
+    @include font-prop(900, 26px, 1.62, 0.06em, var(--darkbg-text-color));
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font-prop(900, 44px, 1.36, 0.06em, var(--darkbg-text-color));
+  }
 }
 
 .hero__button-main {

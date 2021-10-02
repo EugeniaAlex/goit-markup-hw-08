@@ -2,23 +2,45 @@
   background-color: var(--second-bg-color);
 
   &__title {
-    @extend.activities__title;
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 30px;
+      text-align: center;
+      @include font-prop(700, 28px, 1.17, 0.03em, var(--main-title-color));
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+      @include font-prop(700, 36px, 1.16, 0.03em, var(--main-title-color));
+    }
   }
 
   &__card-list {
-    display: flex;
-    margin-right: -30px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -30px;
+      margin-bottom: -30px;
+    }
   }
-
   &__card-item {
-    flex-basis: calc(100% / 4 - 30px);
-    margin-right: 30px;
     padding-bottom: 30px;
     background-color: #ffffff;
     text-align: center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 2 - 30px);
+      margin-right: 30px;
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 4 - 30px);
+    }
+  }
+  &__card-item:not(:last-child) {
+    margin-bottom: 30px;
   }
 
   &__name {
