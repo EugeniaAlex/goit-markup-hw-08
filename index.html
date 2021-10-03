@@ -47,15 +47,47 @@
                             +38 096 111 11 11</a>
                     </li>
                 </ul>
-                <button class="menu-button" type="button">
-                    <svg width="40" hight="40">
-                        <use href="./images/sprite.svg#icon-close-menu-opt"></use>
-                        <use href="./images/sprite.svg#icon-open-menu-opt"></use>
+                <button class="menu-button" type="button" data-menu-button>
+                    <svg width="40" hight="40" aria-label="переключатель мобильного меню">
+                        <use class="menu-button__icon-open" href="./images/sprite.svg#icon-open-menu-opt"></use>
                     </svg>
                 </button>
             </div>
             
-            <div class="mobile-menu"></div>
+            <div class="mobile-menu">
+                <button class="menu-btn close" type="button" data-menu-button>
+                    <svg class="menu-btn__svg" width="40" hight="40" aria-label="выключатель мобильного меню">
+                        <use class="menu-button__icon-close" href="./images/sprite.svg#icon-close-black-opt"></use>
+                        
+                    </svg>
+                </button>
+                <ul class="mobile-menu__nav-list list">
+                    <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link link transitions active" href="./index.html">Студия</a></li>
+                    <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link link transitions" href="./portfolio.html">Портфолио</a></li>
+                    <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link link transitions" href="">Контакты</a></li>
+                </ul>
+                <ul class="mobile-menu__contacts-list list">
+                    <li class="mobile-menu__contacts-item">
+                    
+                        <a class="mobile-menu__contacts-link link transitions tel" href="tel:+380961111111">
+                            
+                            +38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu__contacts-item">
+                
+                        <a class="mobile-menu__contacts-link link transitions" href="mailto:info@devstudio.com">
+                            
+                            info@devstudio.com</a>
+                    </li>
+                    
+                </ul>
+                <ul class="mobile-menu__social-list list">
+                    <li class="mobile-menu__social-item"><a class="mobile-menu__social-link link transitions" href="./index.html">Instagram</a></li>
+                    <li class="mobile-menu__social-item"><a class="mobile-menu__social-link link transitions" href="./portfolio.html">Twitter</a></li>
+                    <li class="mobile-menu__social-item"><a class="mobile-menu__social-link link transitions" href="">Facebook</a></li>
+                    <li class="mobile-menu__social-item"><a class="mobile-menu__social-link link transitions" href="">LinkedIn</a></li>
+                </ul>
+            </div>
 
             
         </div>
@@ -494,5 +526,6 @@
     </div>
 
 <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>

@@ -1,3 +1,6 @@
+.header {
+  position: relative;
+}
 .header--border-bottom {
   border-bottom: 1px solid #ececec;
 }
@@ -66,3 +69,13 @@
   margin-right: 10px;
   fill: currentColor;
 }
+
+// .menu-button .menu-button__icon-close {
+//   display: none;
+// }
+// .menu-button.is-open .menu-button__icon-close {
+//   display: block;
+// }
+// .menu-button.is-open .menu-button__icon-open {
+//   display: none;
+// }
