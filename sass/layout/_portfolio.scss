@@ -5,6 +5,10 @@
     margin: -15px;
   }
 }
+.portfolio__list img {
+  width: 100%;
+  height: auto;
+}
 
 .portfolio__item:not(:last-child) {
   margin-bottom: 30px;
